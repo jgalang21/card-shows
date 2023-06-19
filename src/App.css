@@ -1,0 +1,51 @@
+
+* {
+  font-family: 'Manrope', sans-serif;
+ 
+}
+
+.container{
+  background-color: darkslategray;
+}
+
+h1.header {
+  font-size:30px;
+  border-color: black;
+  background-color:#00AA8A;
+  padding: 15px;
+  border-color: black;
+  border-style:solid;
+  text-align: center;
+  padding-left: 90px;
+  display: block;
+}
+
+.intro--header{
+  font-size: 50px;
+  display: inline;
+}
+
+
+.each-slide-effect > div {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 800px;
+ 
+  
+}
+
+.each-slide-effect span {
+  
+  padding: 20px;
+  font-size: 0px;
+  background: #efefef;
+  text-align: center;
+}
+
+.card {
+  border-radius: 50px;
+  border-color: black;
+}
