@@ -4,6 +4,8 @@
  
 }
 
+
+
 .container{
   background-color: darkslategray;
 }
@@ -48,4 +50,18 @@ h1.header {
 .card {
   border-radius: 50px;
   border-color: black;
+  
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.card--img{
+  display: inline-flex;
+  padding: 0px 5px 13px 7px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 750px;
+  height: 550px
 }
