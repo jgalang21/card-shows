@@ -8,7 +8,7 @@ function Intro(){
 
     return (
         <div className="intro">
-             <h1 className="intro--header">Stuff Goes here</h1>
+             <h1 className="intro--header">A comprehensive list of all the Wisconsin Card shows!</h1>
 
         </div>
        
