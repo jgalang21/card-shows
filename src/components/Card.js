@@ -6,9 +6,9 @@ import comingSoon from "../images/coming_soon.jpg"
 function Card(props) {
  
   const showImg = props.coverImg ? (
-    <img className="card--img" src={require(`../images/${props.coverImg}`)} alt="card component" />
+    <img className="card--img" alt="coverPhoto" src={require(`../images/${props.coverImg}`)}  />
   ) : (
-    <img className="card--img" src={comingSoon} />
+    <img className="card--img" alt="coming soon" src={comingSoon} />
   );
 
 
@@ -18,7 +18,7 @@ function Card(props) {
       <div className="card--details">
 
         <div className="card--info" > 
-          <img src={pin} /> 
+          <img src={pin} alt="pin" /> 
           <h2>{props.title}</h2>
           <h3>{props.description}</h3>
           <h3>Where: {props.location} </h3>
