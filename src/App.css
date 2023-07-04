@@ -65,9 +65,9 @@ h1.header {
 .card {
   border:black;
   border-radius: 50px;
-  
+  width: auto;
   text-align: center;
-  background-color: green;
+ 
   display: block;
 }
 
@@ -86,6 +86,37 @@ h1.header {
 }
 
  .card--details{
-  display: inline;
+  display: block;
   
-} 
+}
+
+.card--info {
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 40px;
+}
+
+.card--info a{
+  font-size: 20px;
+}
+
+.card--details img {
+  width: 25px;
+  height: 30px;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.card--details h2 {
+  display: inline;
+  font-size: 40px;
+}
+
+.card--details h3 {
+  font-size: 25px;
+}
+
+
