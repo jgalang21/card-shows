@@ -87,6 +87,12 @@ jobs:
         echo '  make release'
         exit 1
 
+    - name: Fail the workflow if vulnerabilities are found
+      if: ${{ failure() }}  # This triggers on any prior failure
+      run: |
+        echo "Failing due to vulnerabilities"
+        exit 1
+
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
