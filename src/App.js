@@ -13,7 +13,8 @@ function App() {
   const userInput = req.query.input;
   res.send(`<div>${userInput}</div>`);
   
-
+   const API_KEY="383802-03B";
+   console.log(API_KEY);
   return (
     <div className="container">
       <div className="container--header">
