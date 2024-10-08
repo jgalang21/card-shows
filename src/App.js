@@ -14,7 +14,9 @@ function App() {
   res.send(`<div>${userInput}</div>`);
   
    const API_KEY="383802-03Baa";
-   console.log(API_KEY);
+   const user="admin";
+   const password="stupid";
+   console.log(API_KEY + user + password);
   return (
     <div className="container">
       <div className="container--header">
