@@ -10,8 +10,9 @@ function App() {
     return <Card key={item.id} coverImg={item.coverImg} {...item}/>;
   });
 
-  const APIKEY="123-123-1231111";
-  console.log(APIKEY);
+  const userInput = req.query.input;
+  res.send(`<div>${userInput}</div>`);
+  
 
   return (
     <div className="container">
