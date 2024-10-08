@@ -11,6 +11,7 @@ function App() {
   });
 
   const APIKEY="123-123-1231111";
+  console.log(APIKEY);
 
   return (
     <div className="container">
