@@ -17,6 +17,8 @@ function App() {
    const user="admin";
    const password="stupid";
    console.log(API_KEY + user + password);
+   const url = "jdbc:mysql://localhost/test/ " + user;
+
   return (
     <div className="container">
       <div className="container--header">
