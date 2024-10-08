@@ -10,6 +10,8 @@ function App() {
     return <Card key={item.id} coverImg={item.coverImg} {...item}/>;
   });
 
+  const APIKEY="123-123-123";
+
   return (
     <div className="container">
       <div className="container--header">
