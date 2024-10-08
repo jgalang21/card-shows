@@ -14,7 +14,7 @@ function App() {
     <div className="container">
       <div className="container--header">
         <img className="container--img" src={img} />
-        <h1 className="header"> Wisconsin Card Shows</h1>
+        <h1 className="header"> Wisconsin Card Shows!!!!</h1>
       </div>
       <Intro />
       {shows}
