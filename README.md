@@ -7,7 +7,11 @@
 
 ## Final Result
 
-Image goes here
+Please note none of the websites are actually accessible, I documented everything I did below
+
+![Screenshot 2024-11-03 161526](https://github.com/user-attachments/assets/d7935590-c0c3-4980-8821-aa41663f35a7)
+![image](https://github.com/user-attachments/assets/74947abf-46e7-462e-9002-dec5e27cef16)
+
 
 
 
@@ -16,10 +20,16 @@ Image goes here
 2. The React Application was sitting in my Github repo, so I simply just pulled that one. 
 3. Once I was finished and verified they were working locally, I containerized them using Docker. I verified that they were working locally on a Docker container.
 4. Now that the docker containers were ready, I pushed both of them to separate repositories on ECR (Elastic Container Registry is similar to Dockerhub but for AWS)
-5. Locally on the CLI, I created the EKS Kubernetes cluster. When using eksctl, you can create a cluster and AWS handles most of the "behind the scenes" infrastructure, specifically the VPCs, subnets, etc. The video suggested to use the GUI on AWS but I had a lot of issues with it. Something with the VPC wasn't configured and I verified this, but I found the CLI to be much easier. The node groups were stuck on creating and I couldn't debug why, but I didn't run into this issue with the CLI.
-6. I setup the cluster to have the nodes pull my containers stored in ECR. I created two separate deployment and service YAMLs for each application, since they will be hosted on different namespaces. The namespaces gave a sense of "separation", so one URL links to the Python app and the other links to my React app. However they both share the same infrastructure!
-7. To verify that this works, I ran `kubectl get services` and opened up both external IPs. Both apps work as intended!
+ ![image](https://github.com/user-attachments/assets/df15c23f-f02c-4175-9d49-04156e2e1c0e)
 
+5. Locally on the CLI, I created the EKS Kubernetes cluster. When using eksctl, you can create a cluster and AWS handles most of the "behind the scenes" infrastructure, specifically the VPCs, subnets, etc. The video suggested to use the GUI on AWS but I had a lot of issues with it. Something with the VPC wasn't configured and I verified this, but I found the CLI to be much easier. The node groups were stuck on creating and I couldn't debug why, but I didn't run into this issue with the CLI.
+![image](https://github.com/user-attachments/assets/365ae83d-86ba-470b-9ff4-25ffd3a9962f)
+![image](https://github.com/user-attachments/assets/a48e8948-50e6-4446-ae9e-be90d1f6f136)
+![image](https://github.com/user-attachments/assets/f481aaf6-9964-4019-bd55-db7277755529)
+
+7. I setup the cluster to have the nodes pull my containers stored in ECR. I created two separate deployment and service YAMLs for each application, since they will be hosted on different namespaces. The namespaces gave a sense of "separation", so one URL links to the Python app and the other links to my React app. However they both share the same infrastructure!
+8. To verify that this works, I ran `kubectl get services` and opened up both external IPs. Both apps work as intended!
+![Screenshot 2024-11-03 163518](https://github.com/user-attachments/assets/a785801d-0c35-4264-acfe-e726d80a0a81)
 
 
 
