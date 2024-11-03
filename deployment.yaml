@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: card-shows-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: card-shows-app
+  template:
+    metadata:
+      labels:
+        app: card-shows-app
+    spec:
+      containers:
+      - name: card-shows-app
+        image: 339712731938.dkr.ecr.us-east-1.amazonaws.com/card-shows-app:latest
+        ports:
+        - containerPort: 5000
+
+

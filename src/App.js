@@ -10,14 +10,7 @@ function App() {
     return <Card key={item.id} coverImg={item.coverImg} {...item}/>;
   });
 
-  const userInput = req.query.input;
-  res.send(`<div>${userInput}</div>`);
-  
-   const API_KEY="383802-03Baa";
-   const user="admin";
-   const password="stupid";
-   console.log(API_KEY + user + password);
-   const url = "jdbc:mysql://localhost/test/ " + user;
+
 
   return (
     <div className="container">
