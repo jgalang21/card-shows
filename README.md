@@ -2,7 +2,7 @@
 
 ## Objectives
 
-* Deploy two applications on AWS EKS (Elastic Kubernetes Service). The first application was a simple Python application that prints out the container's CPU/MEMORY usage (credit to [this](https://youtu.be/kBWCsHEcWnc?si=XZyyv0-iPzmoK1N5) youtube video) . The second application (this repository) was an old static React Website I created a long time ago for fun. 
+* Deploy two applications on AWS EKS (Elastic Kubernetes Service). The first application was a simple Python application that prints out the container's CPU/MEMORY usage. The second application (this repository) was an old static React Website I created a long time ago for fun. 
 * Learn and get more experience with Kubernetes/AWS EKS, Python, and Docker.
 
 ## Final Result
